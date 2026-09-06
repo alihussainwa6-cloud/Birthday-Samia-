@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Samia 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="hearts">💖 ✨ 💕 ✨ 💖</div>
+
+  <section class="screen active" id="home">
+    <div class="card">
+      <div class="emoji">🎉</div>
+      <h1>It's Your Special Day!</h1>
+      <h2>Samia Arif 💐</h2>
+      <p>
+        Someone special deserves a special birthday surprise! 🥳
+      </p>
+      <button onclick="showScreen('cake')">Let's Celebrate 🎂</button>
+    </div>
+  </section>
+
+
+  <section class="screen" id="cake">
+    <div class="card">
+      <h1>Make a Wish! 🌟</h1>
+
+      <div class="cake">
+        <div class="candles">
+          <span onclick="blow(this)">🕯️</span>
+          <span onclick="blow(this)">🕯️</span>
+          <span onclick="blow(this)">🕯️</span>
+        </div>
+        <div class="cake-body">🎂</div>
+      </div>
+
+      <p id="candleText">
+        Tap all 3 candles to blow them out! 🕯️
+      </p>
+
+      <button onclick="showScreen('surprise')">
+        Continue 🎁
+      </button>
+    </div>
+  </section>
+
+
+  <section class="screen" id="surprise">
+    <div class="card">
+      <div class="gift" onclick="openGift()">🎁</div>
+
+      <h1>There's a Surprise! 🎀</h1>
+
+      <p id="giftText">
+        Tap the gift box! 👆
+      </p>
+
+      <button onclick="openGift()">Open Gift 🎁</button>
+
+      <div id="secret" class="hidden">
+        <h2>🎉 Surprise! 🎉</h2>
+        <p>
+          May your birthday be full of laughter,
+          happiness and beautiful memories. 🌸
+        </p>
+
+        <button onclick="showScreen('photos')">
+          Next 📸
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="screen" id="photos">
+    <div class="card">
+      <h1>Beautiful Memories 📸</h1>
+
+      <div class="gallery">
+  <img src="photo1.png" alt="Memory">
+  <img src="photo2.png" alt="Memory">
+  <img src="photo3.png" alt="Memory">
+      </div>
+
+      <p>
+        Add your favorite memories here and make this page even more special! 💕
+      </p>
+
+      <button onclick="showScreen('final')">
+        One Last Surprise 💌
+      </button>
+    </div>
+  </section>
+
+
+  <section class="screen" id="final">
+    <div class="card final-card">
+      <div class="bigCake">🎂</div>
+
+      <h1>Happy Birthday</h1>
+      <h2>Samia Arif! 💖</h2>
+
+      <>
+<p>
+  Aaj woh khoobsurat din hai jab ek Shahzadi is duniya mein aayi,
+  aur apne saath har taraf khushiyan le aayi. 👑🌸
+  <br><br>
+  Kehte hain kuch log zindagi mein sirf milte nahi,
+  balki zindagi ko aur bhi khoobsurat bana dete hain…
+  aur aap unhi khaas logon mein se hain. ❤️✨
+  <br><br>
+  Meri dua hai ke Allah aapko hamesha khush rakhe,
+  aapki har muskurahat ko hamesha qayam rakhe,
+  aur aapki zindagi khamiyabi, sukoon aur khushiyon se bhar de. 🤲💖
+</p>
+
+<p class="bold">
+  Happy Birthday, Samia Arif! 🎂👑❤️
+</p>
+
+      <div class="confettiText">
+        🎉 🎈 🎊 🎁 🎂 🎊 🎈 🎉
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
